@@ -1,0 +1,68 @@
+body{
+	background-image: url("star.jpg");
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 30px;
+	color: white;
+	background-color: violet;
+	padding: 20px;
+}
+article {
+	color: white;
+	padding: 20px;
+	font-family: Arial;
+	font-size: 14px
+}
+
+.img {
+	width: 100px;
+	height:100px;
+	display: inline;
+}
+
+button{
+	padding:0;
+}
+
+#crystals {
+	padding: 10px;
+}
+
+h3{
+	color: white;
+	padding: 20px;
+	font-family: Arial;
+	font-size: 14px;
+	background-color: violet;
+}
+
+#totalScore{
+	padding: 20px;
+	font-family: Arial;
+	font-size: 14px;
+	background-color: blue;
+	color: white;
+}
+
+#gameNum{
+	float: left;
+	color: white;
+	padding: 20px;
+	font-family: Arial;
+	font-size: 30px;
+	background-color: violet;
+}
+
+#point{
+	color: white;
+	padding: 20px;
+	font-family: Arial;
+	font-size: 14px;
+	background-color: blue;
+}
+
+#game{
+	display: inline;
+}

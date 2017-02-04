@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"><meta>
+	<title>The Crystal Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	
+</head>
+<body>
+
+	<h1>CrystalsCollector</h1>
+	<article>
+		<p>You will be given a random number at the start of the game.</p>
+		<br>
+		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+		<br>
+		<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+		<br>
+		<p>The value of each crystals is hidden from you until you click on it.</p>
+		<br>
+		<p>Each time when the game starts, the game will change the values of each crystal.</p>
+		<br>
+	</article>
+	<div id="game">
+		<div id="gameNum"></div>
+		<div id="point">
+			<div id="text"></div>
+			<p>Wins: <span id="wins"></span></p>
+			<p>Losses: <span id="losses"></span></p>
+		</div>
+	</div>
+	<div id="crystals">
+		<button><img class="img crystal ruby" src="assets/images/ruby.jpg"></button>
+		<button><img class="img crystal emerald" src="assets/images/emerald.jpg"></button>
+		<button><img class="img crystal amethyst" src="assets/images/amethyst.jpg"></button>
+		<button><img class="img crystal sapphire" src="assets/images/sapphire.jpg"></button>
+	</div>
+	<div>
+		<h3>Your total score is:</h3>
+		<div id="totalScore"></div>
+	</div>
+	<script type="text/javascript" src="assets/javascript/game.js">
+	/* $(document).ready(function(){
+	//ID elements
+		var gameNum = ("#gameNum");
+		var point = ("#point");
+		var totalScore=("#totalScore");
+		var div = $("<div>");
+	//values
+		var wins=0;
+		var losses=0;
+		var ranNum=null;
+		//var addScore = null;
+		var Score=0;
+		
+		var ranScore= Math.floor(Math.random()*120)+18;
+		//crystal random values
+		var rubyValue= (Math.floor(Math.random()*12)+1);
+		console.log(rubyValue);
+		var ametValue= (Math.floor(Math.random()*12)+1);
+		console.log(ametValue);
+		var emerValue= (Math.floor(Math.random()*12)+1);
+		console.log(emerValue);
+		var sappValue= (Math.floor(Math.random()*12)+1);
+		console.log(sappValue);
+
+		$(".ruby").attr("data-crysScore", rubyValue);
+		$(".emerald").attr("data-crysScore", emerValue);
+		$(".amethyst").attr("data-crysScore", ametValue);
+		$(".sapphire").attr("data-crysScore", sappValue);
+
+		//New ranScore
+		function newRanScore(){
+			ranScore= Math.floor(Math.random()*120)+18;
+		};
+
+		//ranScore display
+		var div1 = $("<div>");
+		div1.text(ranScore);
+		$("#gameNum").append(div1);
+		console.log(ranScore);
+
+		//displace win/lose:
+		
+		var spanW = $("<span>");
+		spanW.text(wins);
+		$("#wins").append(spanW);
+		console.log(wins);
+
+		var spanL = $("<span>");
+		spanL.text(losses);
+		$("#losses").append(spanL);
+		console.log(losses);
+		//Initial Display 
+		//random Score to match
+		//function display(){
+			//console.log(ranScore);
+			//var div = $("<div>");
+			//div.text(ranScore);
+			//$("#gameNum").append(div);
+
+			//var div2 = $("<div>");
+			//div2.text(Score);
+			//$("#totalScore").append(div2);
+		//};
+
+		//run initial display
+		//display();
+
+		//create new span for gameNum
+		$(".crystal").on("click", function() {
+			var addScore = Number($(this).attr("data-crysScore"));
+			console.log(addScore);
+			console.log(typeof addScore);
+			Score = addScore + Score;	
+			console.log(Score);
+			//display();
+			div.text(Score);
+			$("#totalScore").append(div);
+
+			if (Score===ranScore){
+					wins++;
+					Score=0;
+					$("#text").text("You won!");
+					
+			}
+			else if(Score>ranScore){
+				losses++;
+				Score=0;
+				$("#text").text("You lost!")
+			}
+		});
+
+		//create new span for point 
+
+
+		//create new span for totalScore
+
+
+
+		//end of code
+	});*/
+
+
+
+
+
+	</script>
+
+</body>
+</html>
