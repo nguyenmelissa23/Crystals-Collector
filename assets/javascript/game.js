@@ -1,23 +1,4 @@
 $(document).ready(function(){
-
-// var crystals = {
-// 	green : {
-// 		name: "Green",
-// 		value: 0
-// 	},
-// 	blue : {
-// 		name: "Blue",
-// 		value: 0
-// 	}
-// };
-
-// crystals.green.value = randomNumber(1, 12);
-
-// function randomNumber(min, max){
-// 	var random = Math.floor(Math.random() * max) + min;
-// 	return random;
-// }
-
 //ID elements
 	var gameNum = ("#gameNum");
 	var point = ("#point");
@@ -53,6 +34,15 @@ $(document).ready(function(){
 	//New ranScore
 	function newRanScore(){
 		ranScore= Math.floor(Math.random()*120)+18;
+		rubyValue= (Math.floor(Math.random()*12)+1);
+		ametValue= (Math.floor(Math.random()*12)+1);
+		emerValue= (Math.floor(Math.random()*12)+1);
+		sappValue= (Math.floor(Math.random()*12)+1);
+		$(".ruby").attr("data-crysScore", rubyValue);
+		$(".emerald").attr("data-crysScore", emerValue);
+		$(".amethyst").attr("data-crysScore", ametValue);
+		$(".sapphire").attr("data-crysScore", sappValue);
+
 	};
 	
 	function print(){
@@ -65,23 +55,9 @@ $(document).ready(function(){
 		spanL.text(losses);
 		$("#losses").append(spanL);
 	};
-
+	
+	newRanScore();
 	print();
-	//Initial Display 
-	//random Score to match
-	//function display(){
-		//console.log(ranScore);
-		//var div = $("<div>");
-		//div.text(ranScore);
-		//$("#gameNum").append(div);
-
-		//var div2 = $("<div>");
-		//div2.text(Score);
-		//$("#totalScore").append(div2);
-	//};
-
-	//run initial display
-	//display();
 
 	//create new span for gameNum
 	$(".crystal").on("click", function() {
