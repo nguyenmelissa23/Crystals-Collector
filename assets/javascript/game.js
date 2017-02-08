@@ -1,4 +1,23 @@
 $(document).ready(function(){
+
+// var crystals = {
+// 	green : {
+// 		name: "Green",
+// 		value: 0
+// 	},
+// 	blue : {
+// 		name: "Blue",
+// 		value: 0
+// 	}
+// };
+
+// crystals.green.value = randomNumber(1, 12);
+
+// function randomNumber(min, max){
+// 	var random = Math.floor(Math.random() * max) + min;
+// 	return random;
+// }
+
 //ID elements
 	var gameNum = ("#gameNum");
 	var point = ("#point");
@@ -15,7 +34,7 @@ $(document).ready(function(){
 	//var addScore = null;
 	var Score=0;
 	
-	var ranScore= Math.floor(Math.random()*120)+18;
+	var ranScore= Math.floor(Math.random()*120)+19;
 	//crystal random values
 	var rubyValue= (Math.floor(Math.random()*12)+1);
 	console.log(rubyValue);
